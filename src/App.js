@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch,Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch,Routes ,HashRouter} from 'react-router-dom';
 import LoginPage from './LoginPage';
 import RegisterPage from './RegisterPage';
 import HomePage from './HomePage';
@@ -12,7 +12,8 @@ import SuccessPage from './SuccessPage';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
+    {/* <Router> */}
       <NavBar/>
       <TransitionGroup>
       <CSSTransition  classNames="fade" timeout={''}>
@@ -25,7 +26,8 @@ function App() {
       </Routes>
       </CSSTransition>
       </TransitionGroup>
-    </Router>
+    {/* </Router> */}
+    </HashRouter>
   );
 }
 
