@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch,Routes ,HashRouter} from 'react-router-dom';
+import {  Router, Route, Switch,Routes ,HashRouter} from 'react-router-dom';
 import LoginPage from './LoginPage';
 import RegisterPage from './RegisterPage';
 import HomePage from './HomePage';
